@@ -33,8 +33,8 @@ export class MarketplaceComponent implements OnInit {
  //   new Album("Axis Bold As Love", "The Jimi Hendrix Experience",
  //       "Second studio album by the English-American band, released in 1967.", 6)
  // ];
- goToDetailPage(clickedAlbum: Album) {
-    // this.router.navigate(['albums', clickedAlbum.id]);
+ goToDetailPage(clickedAlbum) {
+  this.router.navigate(['albums', clickedAlbum.$key]);
   };
 
 }
